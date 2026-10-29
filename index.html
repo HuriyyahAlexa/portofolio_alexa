@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Huriyyah Alexa Nabil Artemisia</title>
+    <title>Portofolio - Huriyyah Alexa Nabil Artemisia</title>
     <style>
         * {
             margin: 0;
@@ -12,12 +12,12 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         body {
-            background-color: #1a1226; /* Latar belakang ungu sangat gelap */
-            color: #e2d9f3; /* Teks terang dengan tone ungu muda */
+            background-color: #1a1226; /* Latar belakang ungu gelap */
+            color: #e2d9f3;
             line-height: 1.6;
         }
         header {
-            background: #241935; /* Header ungu gelap */
+            background: #241935;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             position: fixed;
             width: 100%;
@@ -34,7 +34,7 @@
         .logo {
             font-size: 1.4rem;
             font-weight: bold;
-            color: #bb86fc; /* Ungu neon lembut untuk aksen */
+            color: #bb86fc;
             margin-bottom: 10px;
         }
         .nav-links {
@@ -57,33 +57,28 @@
         .container {
             max-width: 600px;
             margin: 0 auto;
-            padding: 140px 20px 40px 20px;
+            padding: 160px 20px 40px 20px;
         }
         section {
             margin-bottom: 40px;
+            display: block;
         }
         .hero-card {
-            background: #241935; /* Kartu utama ungu gelap */
+            background: #241935;
             border: 1px solid #3d2c56;
             border-radius: 24px;
-            padding: 35px 20px;
+            padding: 40px 20px;
             text-align: center;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
         }
-        .profile-img-container {
-            width: 120px;
-            height: 120px;
-            margin: -75px auto 20px auto;
+        .profile-pic {
+            width: 155px;
+            height: 155px;
             border-radius: 50%;
-            border: 4px solid #241935;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            background: #3d2c56;
-        }
-        .profile-img-container img {
-            width: 100%;
-            height: 100%;
+            border: 4px solid #bb86fc;
             object-fit: cover;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
         }
         .welcome-text {
             font-size: 0.85rem;
@@ -106,7 +101,7 @@
         }
         .badge-btn {
             display: inline-block;
-            background: #7c4dff; /* Tombol ungu cerah kontras */
+            background: #7c4dff;
             color: #ffffff;
             padding: 10px 24px;
             border-radius: 20px;
@@ -150,24 +145,28 @@
             margin-bottom: 5px;
         }
         .contact-list {
-            display: flex;
-            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
-            flex-wrap: wrap;
+            max-width: 450px;
+            margin: 0 auto;
         }
         .contact-list a {
-            color: #a493c4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 500;
-            padding: 8px 16px;
-            background: #241935;
-            border: 1px solid #3d2c56;
-            border-radius: 8px;
+            padding: 12px 20px;
+            background: #3d2c56;
+            border: 1px solid #523b70;
+            border-radius: 25px;
             transition: all 0.3s;
         }
         .contact-list a:hover {
             background: #7c4dff;
-            color: #ffffff;
             border-color: #7c4dff;
         }
         footer {
@@ -181,9 +180,10 @@
 </head>
 <body>
 
+    <!-- NAVIGASI ATAS -->
     <header>
         <nav>
-            <div class="logo">Alexa's Portfolio</div>
+            <div class="logo">Alexa's Portofolio</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -198,15 +198,13 @@
     <div class="container">
         
         <!-- HOME / HERO SECTION -->
-        <section id="home" style="margin-top: 40px;">
+        <section id="home">
             <div class="hero-card">
-                <div class="profile-img-container">
-                    <img src="https://placeholder.com" alt="Foto Alexa">
-                </div>
-                <div class="welcome-text">Welcome to My Portfolio</div>
+                <img src="https://imgbox.com" alt="Foto Huriyyah Alexa Nabil Artemisia" class="profile-pic">
+                <div class="welcome-text">WELCOME TO MY PORTOFOLIO</div>
                 <h1>Hi, I'm Huriyyah Alexa Nabil Artemisia</h1>
                 <p class="description">
-                    Mahasiswa S1 Pendidikan Teknologi Informasi yang tertarik pada teknologi, pengembangan sistem, dan inovasi digital. 
+                    Mahasiswa S1 Pendidikan Teknologi Informasi yang tertarik pada teknologi, pengembangan sistem, dan inovasi digital.
                     Saya bercita-cita menjadi profesional yang adaptif, kreatif, dan mampu berkontribusi aktif di industri maupun perusahaan teknologi masa depan.
                 </p>
                 <div class="badge-btn">Future Tech Company Professional</div>
@@ -216,12 +214,14 @@
         <!-- ABOUT ME SECTION -->
         <section id="about">
             <h2 class="section-title">About Me</h2>
-            <div class="content-card">
-                <div class="icon-title"><span>🎓</span><strong>Identitas Diri</strong></div>
-                <p><strong>Nama:</strong> Huriyyah Alexa Nabil Artemisia</p>
-                <p><strong>Program Studi:</strong> S1 Pendidikan Teknologi Informasi</p>
-                <br>
-                <p>Halo! Saya adalah seorang mahasiswa yang antusias dalam mengeksplorasi dunia teknologi informasi dan penerapannya secara luas. Saya senang mempelajari tantangan baru di industri digital, mengasah keahlian teknis, serta berkolaborasi dalam tim untuk memecahkan berbagai masalah.</p>
+            <div class="content-card" style="text-align: left; padding: 30px 25px;">
+                <div style="text-align: center; font-size: 4.5rem; margin-bottom: 25px; letter-spacing: 15px;">🎓💻</div>
+                <h3 style="color: #bb86fc; font-size: 1.3rem; margin-bottom: 15px;">Who Am I?</h3>
+                <p style="margin-bottom: 8px;"><strong style="color: #ffffff;">Nama:</strong> Huriyyah Alexa Nabil Artemisia</p>
+                <p style="margin-bottom: 8px;"><strong style="color: #ffffff;">NIM:</strong> 26050974170</p>
+                <p style="margin-bottom: 20px;"><strong style="color: #ffffff;">Program Studi:</strong> Pendidikan Teknologi Informasi</p>
+                <p style="color: #c5b8dc; margin-bottom: 15px;">Halo! Nama saya Huriyyah Alexa Nabil Artemisia, mahasiswa S1 Pendidikan Teknologi Informasi.</p>
+                <p style="color: #c5b8dc;">Saya memiliki minat mendalam pada perkembangan teknologi, inovasi sistem digital, dan eksplorasi ilmu baru di bidang IT. Saya adalah pribadi yang senang menantang diri untuk belajar hal-hal baru, adaptif terhadap perubahan, serta mampu berkomunikasi dan bekerja sama secara optimal di dalam tim.</p>
             </div>
         </section>
 
@@ -230,130 +230,37 @@
             <h2 class="section-title">Education</h2>
             <div class="grid">
                 <div class="content-card">
-                    <div class="icon-title"><span>🏫</span><h3>Asal Sekolah Menengah</h3></div>
-                    <p>Senior High School</p>
-                    <div class="date-label">Tahun Lulus</div>
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🎒</div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem;">SDN Wage 1</h3>
+                    <p style="color: #c5b8dc; font-size: 0.95rem;">Primary School</p>
+                    <div class="date-label">2014 - 2017</div>
                 </div>
                 <div class="content-card">
-                    <div class="icon-title"><span>🎓💗</span><h3>Universitas Negeri Surabaya</h3></div>
-                    <p>S1 Pendidikan Teknologi Informasi</p>
-                    <div class="date-label">Sekarang</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS SECTION -->
-        <section id="skills">
-            <h2 class="section-title">What I Can Do</h2>
-            <div class="grid">
-                <div class="content-card">
-                    <div class="icon-title"><span>💻</span><h3>Pemrograman & Tools</h3></div>
-                    <p>Mempelajari dasar bahasa pemrograman, manajemen basis data, serta pemanfaatan tools modern untuk produktivitas kerja.</p>
+                    <div style="font-size: 2rem; margin-bottom: 10px;">✏️</div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem;">SDN Kemlaten 1</h3>
+                    <p style="color: #c5b8dc; font-size: 0.95rem;">Primary School</p>
+                    <div class="date-label">2017 - 2020</div>
                 </div>
                 <div class="content-card">
-                    <div class="icon-title"><span>🤖</span><h3>Prompt Engineering</h3></div>
-                    <p>Mengoptimalkan kecerdasan buatan (AI) seperti Gemini, ChatGPT, dan Claude guna mendukung proses riset dan efisiensi belajar.</p>
+                    <div style="font-size: 2rem; margin-bottom: 10px;">📖</div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem;">SMPN 2 Parengan</h3>
+                    <p style="color: #c5b8dc; font-size: 0.95rem;">Junior High School</p>
+                    <div class="date-label">2020 - 2023</div>
+                </div>
+                <div class="content-card">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🏛️</div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem;">SMAN 1 Parengan</h3>
+                    <p style="color: #c5b8dc; font-size: 0.95rem;">Senior High School</p>
+                    <div class="date-label">2023 - 2026</div>
+                </div>
+                <div class="content-card" style="border-color: #bb86fc;">
+                    <div style="font-size: 2rem; margin-bottom: 10px;">🌟</div>
+                    <h3 style="color: #ffffff; font-size: 1.2rem;">Universitas Negeri Surabaya</h3>
+                    <p style="color: #c5b8dc; font-size: 0.95rem;">S1 Pendidikan Teknologi Informasi</p>
+                    <div class="date-label">2026 - 2030</div>
                 </div>
             </div>
-        </section>
-
-        <!-- EXPERIENCE SECTION -->
-        <section id="experience">
-            <h2 class="section-title">Experience</h2>
-            <div class="content-card">
-                <div class="icon-title"><span>💼</span><h3>Pengalaman Organisasi / Kepanitiaan</h3></div>
-                <p>Tuliskan pengalaman kepengurusan kelas, OSIS, kepanitiaan event, atau aktivitas sosial yang pernah Anda ikuti di sini.</p>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact">
-            <h2 class="section-title">Get In Touch</h2>
-            <p style="text-align: center; margin-bottom: 20px; font-size: 0.95rem; color: #a493c4;">Hubungi saya melalui platform di bawah ini.</p>
-            <div class="contact-list">
-                <a href="mailto:emailanda@gmail.com">✉ Email</a>
-                <a href="#">🐙 GitHub</a>
-                <a href="#">💼 LinkedIn</a>
-                <a href="#">📸 Instagram</a>
-            </div>
-        </section>
-
-    </div>
-
-    <footer>
-<!-- ABOUT ME SECTION -->
-<section id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="content-card" style="text-align: left; padding: 30px 25px;">
-        
-        <!-- Area Ilustrasi Topi Toga & Laptop Emoji -->
-        <div style="text-align: center; font-size: 4.5rem; margin-bottom: 25px; letter-spacing: 15px;">
-            🎓💻
-        </div>
-
-        <h3 style="color: #bb86fc; font-size: 1.3rem; margin-bottom: 15px;">Who Am I?</h3>
-        
-        <p style="margin-bottom: 8px;"><strong style="color: #ffffff;">Nama:</strong> Huriyyah Alexa Nabil Artemisia</p>
-        <p style="margin-bottom: 8px;"><strong style="color: #ffffff;">NIM:</strong> 26050974170</p>
-        <p style="margin-bottom: 20px;"><strong style="color: #ffffff;">Program Studi:</strong> Pendidikan Teknologi Informasi</p>
-        
-        <p style="color: #c5b8dc; margin-bottom: 15px;">
-            Halo! Nama saya Huriyyah Alexa Nabil Artemisia, mahasiswa S1 Pendidikan Teknologi Informasi.
-        </p>
-        
-        <p style="color: #c5b8dc;">
-            Saya memiliki minat mendalam pada perkembangan teknologi, inovasi sistem digital, dan eksplorasi ilmu baru di bidang IT. Saya adalah pribadi yang senang menantang diri untuk belajar hal-hal baru, adaptif terhadap perubahan, serta mampu berkomunikasi dan bekerja sama secara optimal di dalam tim.
-        </p>
-
-    </div>
-</section>
-<!-- EDUCATION SECTION -->
-<section id="education" style="text-align: center;">
-    <h2 class="section-title">Education</h2>
-    
-    <div class="grid">
-        <!-- SD 1 -->
-        <div class="content-card">
-            <div style="font-size: 2rem; margin-bottom: 10px;">🎒</div>
-            <h3 style="color: #ffffff; font-size: 1.2rem;">SDN Wage 1</h3>
-            <p style="color: #c5b8dc; font-size: 0.95rem;">Primary School</p>
-            <div class="date-label">2014 - 2017</div>
-        </div>
-
-        <!-- SD 2 -->
-        <div class="content-card">
-            <div style="font-size: 2rem; margin-bottom: 10px;">✏️</div>
-            <h3 style="color: #ffffff; font-size: 1.2rem;">SDN Kemlaten 1</h3>
-            <p style="color: #c5b8dc; font-size: 0.95rem;">Primary School</p>
-            <div class="date-label">2017 - 2020</div>
-        </div>
-
-        <!-- SMP -->
-        <div class="content-card">
-            <div style="font-size: 2rem; margin-bottom: 10px;">📖</div>
-            <h3 style="color: #ffffff; font-size: 1.2rem;">SMPN 2 Parengan</h3>
-            <p style="color: #c5b8dc; font-size: 0.95rem;">Junior High School</p>
-            <div class="date-label">2020 - 2023</div>
-        </div>
-
-        <!-- SMA -->
-        <div class="content-card">
-            <div style="font-size: 2rem; margin-bottom: 10px;">🏛️</div>
-            <h3 style="color: #ffffff; font-size: 1.2rem;">SMAN 1 Parengan</h3>
-            <p style="color: #c5b8dc; font-size: 0.95rem;">Senior High School</p>
-            <div class="date-label">2023 - 2026</div>
-        </div>
-
-        <!-- Universitas -->
-        <div class="content-card" style="border-color: #bb86fc;">
-            <div style="font-size: 2rem; margin-bottom: 10px;">🌟✨</div>
-            <h3 style="color: #ffffff; font-size: 1.2rem;">Universitas Negeri Surabaya</h3>
-            <p style="color: #c5b8dc; font-size: 0.95rem;">S1 Pendidikan Teknologi Informasi</p>
-            <div class="date-label">2026 - Present</div>
-        </div>
-    </div>
-</section>
-<!-- SKILLS SECTION -->
+       <!-- SKILLS SECTION -->
 <section id="skills" style="text-align: center;">
     <h2 class="section-title">What I Can Do</h2>
     
@@ -441,7 +348,7 @@
         </div>
     </div>
 </section>
- <!-- CONTACT SECTION -->
+<!-- CONTACT SECTION -->
 <section id="contact" style="text-align: center;">
     <h2 class="section-title">Get In Touch</h2>
     <div class="content-card" style="padding: 35px 20px;">
@@ -462,4 +369,19 @@
             </a>
             
             <!-- LinkedIn -->
-            <a href="https://www.linkedin.com/in/huriyyah-alexa-
+            <a href="https://www.linkedin.com/in/huriyyah-alexa-nabil-artemisia-a21169441?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; background: #3d2c56; color: #ffffff; text-decoration: none; padding: 12px 20px; border-radius: 25px; border: 1px solid #523b70; font-weight: 500; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#7c4dff'" onmouseout="this.style.backgroundColor='#3d2c56'">
+                💼 LinkedIn
+            </a>
+            
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/alexartmsia?srtk=MWFtcHJjM2MycHNxZA==" target="_blank" style="display: flex; align-items: center; justify-content: center; gap: 8px; background: #3d2c56; color: #ffffff; text-decoration: none; padding: 12px 20px; border-radius: 25px; border: 1px solid #523b70; font-weight: 500; transition: all 0.3s;" onmouseover="this.style.backgroundColor='#7c4dff'" onmouseout="this.style.backgroundColor='#3d2c56'">
+                📸 Instagram
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <p>&copy; 2026 Huriyyah Alexa Nabil Artemisia. Made with 💜</p>
+</footer>
